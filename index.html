@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Small Screens, Big Rewards! The Experience of converting Desktop to Mobile</title>
+
+		<meta name="author" content="Jessica Kennedy">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/simple.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Small Screens, Big Rewards!</h1>
+					<h3>The Experience of Converting Desktop to Mobile</h3>
+					<p>
+						<small>Created by <a href="http://mistersender.com">Jessica Kennedy</a> / <a href="http://twitter.com/mistersender">@mistersender</a></small>
+					</p>
+				</section>
+
+				<section class='c-grid'>
+          <div>
+            <figure class="c-me" style="background-image: url(images/me.jpg)">
+              Me, Jessica Kennedy!
+            </figure>
+          </div>
+          <div style = 'flex: calc(100% - 300px)'>
+  					<h2>Who am I?</h2>
+  					<ul>
+  						<li>Senior Software Engineer</li>
+  						<li>10 Years + Development</li>
+  						<li>3 Years converting Desktop to Mobile</li>
+  					</ul>
+          </div>
+				</section>
+
+				<section>
+					<h1>Why Mobile?</h1>
+					<aside class="notes">
+						* todo: actually put stuff here.
+					</aside>
+				</section>
+
+				<section>
+					<h1>Architecture</h1>
+				</section>
+
+				<section>
+					<h2>How will we code the site?</h2>
+					<ul>
+						<li>Separate Code Base (using domains or dynamic content switch)</li>
+						<li>Responsive</li>
+					</ul>
+					<aside class="notes">
+							* separate domains - `m.`
+							* Dynamic switch - same domain, separate code bases
+							* Responsive - 1 code base for all the things
+					</aside>
+				</section>
+
+				<section>
+					<h2>Separate Code Base</h2>
+					<h4>Advantages</h4>
+					<ul>
+						<li>Keeps each code base simpler</li>
+						<li>Smaller File sizes individually</li>
+						<li>Faster to code if new to mobile</li>
+						<li>Easier to make decisions</li>
+						<li>Less to break when updating</li>
+						<li>Easier to tailor experience</li>
+						<li>Allows for developers to "Specialize" in one base</li>
+					</ul>
+					<aside class="notes">
+						* tailor experience - like, "this report is unnecessary on mobile", remove it.
+						* decisions - like, "add a print button"?
+					</aside>
+				</section>
+
+				<section>
+					<h2>Responsive Code Base</h2>
+					<h4>Advantages</h4>
+					<ul>
+						<li>Requires good code organization</li>
+						<li>Smaller file sizes combined</li>
+						<li>More likely to net a better product in the end</li>
+						<li>One code base to maintain</li>
+						<li>Faster to code if familiar with UI</li>
+					</ul>
+					<aside class="notes">
+							* good for sites that will likely be the same on both.
+							* experienced devs only
+					</aside>
+				</section>
+
+				<section>
+					<h2>Examples</h2>
+					<aside class="notes">
+						todo: actually come up with examples (audience particiapte pls)
+					</aside>
+				</section>
+
+				<section>
+					<h1>Mobile First</h1>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h2>What does it mean?</h2>
+					<img src="images/double_rainbow.jpg" alt="Double Rainbow- what does it mean?">
+					<aside class="notes">
+							Really, ask them what they think it means.<br>
+							Probably "think about mobile before desktop."
+					</aside>
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h2>What does it mean?</h2>
+					<h3><b>Think</b> Mobile First</h3>
+					<h3><b>Code</b> Mobile First</h3>
+				</section>
+
+				<section>
+					<h2><b>Think</b> Mobile First</h2>
+					<ul>
+						<li class="fragment">Is it necessary?</li>
+						<li class="fragment">Is it useful?</li>
+						<li class="fragment">Is it easy?</li>
+					</ul>
+					<aside class="notes">
+						thinking mobile first is an easy habit to form.<br>
+						coding mobile first is not.
+						todo: get more examples of thinking mobile first
+					</aside>
+				</section>
+
+				<section>
+					<h3>DON'T scale your Desktop site down!</h3>
+					<img src="images/gob_come_on.gif" alt="Oh, come on!">
+				</section>
+
+				<section>
+					<h1>How to <b>Code</b> Mobile First</h1>
+					<aside class="notes">
+						ask them for ideas about how to code mobile first.
+					</aside>
+				</section>
+
+				<section>
+					<img src="images/shia_endorsed.jpg" alt="Shia Endorses Preprocessors &amp; Build Tools">
+				</section>
+
+				<section>
+					<img src="images/preprocessors.png" alt="sass, less, stylus" class="u-no-border"><br>
+					<img src="images/gulp_grunt_fly.png" alt="gulp, grunt, fly" class="u-no-border">
+					<aside class="notes">
+						tell story about join motives and fast reskin
+					</aside>
+				</section>
+
+				<section>
+					<h3>Magic They Perform</h3>
+					<ul>
+						<li>Reusable css</li>
+						<li>Minify css</li>
+						<li>Auto-prefix css</li>
+						<li>Automatically combine media queries</li>
+						<li>And more!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Shift your Thoughts</h2>
+					<p><b>320px</b> is your new "base" size.</p>
+					<p>This: <pre><code class="hljs">@media ( min-width: 568px ) {}</code></pre> Not: <pre><code class="hljs">@media ( max-width: 568px ) {}</code></pre></p>
+					<p>Queries should be <b>applied</b> as screen size <b>increases</b>.</p>
+				</section>
+
+				<section>
+					<h3>Touchable Areas</h3>
+					<ul>
+						<li><b>44px</b> is perfect touch size.</li>
+						<li>Are links too close together?</li>
+						<li>Does this look interactive?</li>
+					</ul>
+					<aside class="notes">
+						interactive: material design shadows? overflowing text for scrolling?
+						todo: get screenshots of the things above
+					</aside>
+				</section>
+
+				<section>
+					<h3>Use Protocols!</h3>
+					Email:
+					<pre><code class="hljs">href="mailto:triadwebcrafters@gmail.com"</code></pre>
+					Phone:
+					<pre><code class="hljs">href="tel:3365551234"</code></pre>
+				</section>
+
+				<section>
+					<h3>Meta Tags</h3>
+					<p>Preventing facepalms everywhere.</p>
+					<ul>
+						<li>Disable pinch/zoom</li>
+						<li>Disable auto-locating phone/addresses</li>
+						<li>"viewport" - tons of options, like:</li>
+					</ul>
+          <pre><code>width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui</code></pre>
+          <p><a href="examples/flexbox/without-meta.html" target="_blank">Example Without Meta Tags</a> </p>
+          <p><a href="examples/flexbox/index.html" target="_blank">Example With Meta Tags</a></p>
+					<aside class="notes">
+						If its a weird bug, you probably missed a meta tag.
+						todo: set up a boilerplate with metas
+					</aside>
+				</section>
+
+<!-- -------------------CSS----------------------- -->
+        <section>
+          <h1>CSS</h1>
+          <p>The one everyone seems to hate.</p>
+        </section>
+
+        <section>
+          <h2>calc()</h2>
+          <p>The coolest thing since flexbox</p>
+          <pre><code>
+.o-wrapper {
+  margin-left: calc(100% - 50px);
+}
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>em & vh</h2>
+          <p>The most underrated units of measure<p>
+          <aside class="notes">
+            who can tell me what ems are?
+            <br>
+            who can tell me where ems got their name? ("M" used for spacing)
+            <br>
+            what about vh?
+          </aside>
+        </section>
+
+        <section>
+          <h2>See them work together!</h2>
+          <a href="examples/ems/index.html" target="_blank">em, vh, & calc() example</a>
+        </section>
+
+        <section>
+          <h2>currentColor</h2>
+          <!-- @todo: might scrap this one. -->
+          <aside class="notes">
+            used for like a spinner or something.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Flexbox</h2>
+          <p>The coolest thing since internet</p>
+          <!-- @todo make an example -->
+          <aside class="notes">
+            fixes all the weird stuff bootstrap does for grids
+            <br>
+            lighter faster, more flexible
+          </aside>
+        </section>
+
+        <section>
+          <h2>Flexbox makes it easy to...</h2>
+          <ul>
+            <li class="fragment">Make grids</li>
+            <li class="fragment">Make equal height columns</li>
+            <li class="fragment">Vertically center all the things!</li>
+            <li class="fragment">Rearrange the page</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1><a href="examples/flexbox/index.html" target="_blank">Flexbox Example</a></h1>
+        </section>
+
+        <section>
+          <h2>Want to know more?</h2>
+          <h3>Go to "Highly Organized CSS"</h3>
+          <h4>With Tyler Benton</h4>
+        </section>
+
+<!-- -------------------Images----------------------- -->
+        <section>
+          <h1>Images</h1>
+        </section>
+        <section>
+          <h2>Where possible, use vectors!</h2>
+          <h4>SVG is Fully Suported</h4>
+        </section>
+        <section>
+          <h2>SVG > Icon Font <small>(usually)</small></h2>
+          <ul>
+            <li>More Accessible</li>
+            <li>More Flexible</li>
+            <li>Multi-color</li>
+          </ul>
+          <aside class="notes">
+            - More accessible (some users have forced fonts, so icons don't look weird if svg)
+            - more flexible (don't have to be in before or after, can be a background)
+            - BUT icon fonts are *slightly* better performance. & can change color easily.
+          </aside>
+        </section>
+        <section>
+          <h2>1x, 2x, & 3x Images</h2>
+          <pre><code>
+            &lt;img src="gob.jpeg"
+                 srcset="gob.jpeg 1x,
+                         gob@2x.jpeg 2x,
+                         gob@3x.jpeg 3x"&gt;
+          </code></pre>
+          <aside class="notes">
+            1x 2x 3x better supported than specific sizes.
+          </aside>
+        </section>
+        <section>
+          <h2>Lazy Load</h2>
+          <pre><code>
+            &lt;img data-src="gob.jpeg"
+                 data-srcset="gob.jpeg 1x,
+                         gob@2x.jpeg 2x,
+                         gob@3x.jpeg 3x"&gt;
+          </code></pre>
+          <!-- todo: if time add lazyload animation example -->
+          <p>Allows for slick animations too!</p>
+          <aside class="notes">
+            they will all work about the same, img path goes in a
+            data attr, and detects when to lad the images.
+            <br>
+            Bonus: can get slick animations if done well.
+          </aside>
+        </section>
+
+<!-- --------------------Animations------------------- -->
+        <section>
+          <h1>Events & Animations</h1>
+        </section>
+        <section>
+          <h2>Transform</h2>
+          <p>If possible, always use a transform.</p>
+          <aside class="notes">
+            Translate doesn't repaint.
+            hardware accelerated.
+          </aside>
+        </section>
+        <section>
+          <pre><code>
+            // no!
+            .c-menu {
+              position: absolute;
+              left: 0;
+              transition: left .2s ease;
+            }
+            .c-menu.is-open{
+              left: 50px;
+            }
+          </code></pre>
+
+          <pre><code>
+            // yes!
+            .c-menu {
+              position: absolute;
+              left: 0;
+              transition: transform .2s ease;
+            }
+            .c-menu.is-open{
+              transform: translateX(50px);
+            }
+          </code></pre>
+          <aside class="notes">
+            this leads me to scrolling...
+          </aside>
+        </section>
+
+        <section>
+          <h2><code>scroll</code> is weird!</h2>
+          <p>But there are workarounds...</p>
+          <aside class="notes">
+            `scroll` event halts DOM repaints till complete.
+            iScroll uses translate.
+          </aside>
+        </section>
+
+        <section>
+          <h3><code>requestAnimationFrame</code></h3>
+          <p>Tell the browser to add an animation before next repaint.</p>
+
+          <h3><code>Javascript Libraries</code></h3>
+          <p>iScroll</p>
+          <aside class="notes">
+            BUT USE SPARINGLY
+          </aside>
+        </section>
+
+        <section>
+          <h2><code>click</code> vs <code>tap</code> Events</h2>
+          <p><code>click</code> is slow, but reliable.</p>
+          <p><code>tap (touch)</code> is fast, but not fully supported.</p>
+          <aside class="notes">
+            up to 300ms slower.
+            <br>
+            mouse & touch events also nto the same.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Use a polyfill!</h2>
+          <p>Pointer Events Polyfill works great</p>
+          <aside class="notes">
+            From Microsoft, unifying. w3c working to standardize (feb 2015)
+          </aside>
+        </section>
+
+        <section>
+          <h3>Be Careful...</h3>
+          <pre><code>
+            $('.js-btn')
+              .on('pointerup', function(e){
+                e.preventDefault(); // doesn't do anything.
+              })
+              .on('click', function(e){
+                e.preventDefault(); // still suppress events this way
+              })
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Forms & Keyboards</h2>
+          <img src="images/input_types_morpheus.jpg" alt="What if I told you there was more than 1 input type?">
+          <!-- todo: get images of all these -->
+        </section>
+
+        <section>
+          <h4>Text Input</h4>
+          <pre><code><input type="text"></code></pre>
+          <img src="images/keyboard_text.jpg" alt="Text Keyboard">
+        </section>
+
+        <section>
+          <h4>Email Input</h4>
+          <pre><code><input type="email"></code></pre>
+          <img src="images/keyboard_email.jpg" alt="Email Keyboard">
+        </section>
+
+        <section>
+          <h4>Phone Number Input</h4>
+          <pre><code><input type="tel"></code></pre>
+          <img src="images/keyboard_tel.jpg" alt="Tel Keyboard">
+        </section>
+
+        <section>
+          <h4>Date Input</h4>
+          <pre><code><input type="date"></code></pre>
+          <img src="images/keyboard_date.jpg" alt="Date Keyboard">
+        </section>
+
+        <section>
+          <h4>Number Input</h4>
+          <p>(Not as preferable)</p>
+          <pre><code><input type="number"></code></pre>
+          <img src="images/keyboard_number.jpg" alt="Number Keyboard">
+        </section>
+
+        <section>
+          <h4>Digit Input (integers only)</h4>
+          <pre><code><input type="number" pattern="[0-9]*"></code></pre>
+          <img src="images/keyboard_digit_integer.jpg" alt="Digit (Integer) Keyboard">
+        </section>
+
+        <section>
+          <h4>Digit Input (any number)</h4>
+          <pre><code><input type="number" pattern="[0-9]*" step="any"></code></pre>
+          <img src="images/keyboard_digit_any.jpg" alt="Digit (Any) Keyboard">
+        </section>
+
+        <section>
+          <h4>And More!</h4>
+          <ul>
+            <li>search</li>
+            <li>url</li>
+            <li>datetime/month/week</li>
+            <li>color</li>
+            <li>range</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h1>Tools</h1>
+        </section>
+
+        <section>
+          <h3>Chrome dev tools</h3>
+          <p>Great mobile tools for testing</p>
+          <!-- todo: possibly show demo of tools -->
+          <ul>
+            <li>Device Pixel ratio (retina images)</li>
+            <li>Device Types</li>
+            <li>Bandwidth Throttling</li>
+            <li>Show Media Queries</li>
+            <li>Touch events</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>xip.io</h2>
+          <p>Test local changes on real devices.</p>
+        </section>
+
+        <section>
+          <h2>BrowserSync.io</h2>
+          <p>Test all the pages on all the things at the same time!</p>
+          <img src="images/all_the_things.jpg" alt="All The Things!">
+        </section>
+
+        <section>
+          <h2>InputTypes.com</h2>
+          <p>A great resource for testing keyboard inputs</p>
+          <p>By: Aaron Ladage @aladage</p>
+        </section>
+
+        <section>
+          <h2>CanIUse.com</h2>
+          <p>How well supported <b>is</b> that thing you want to use?</p>
+          <img src="images/caniuse.jpg" alt="CanIUse screenshot">
+        </section>
+
+        <section>
+          <h1>Questions?</h1>
+          <p>Twitter/Github:</p>
+          <p>@mistersender</p>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
