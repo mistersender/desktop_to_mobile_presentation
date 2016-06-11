@@ -66,10 +66,30 @@
 
 				<section>
 					<h1>Why Mobile?</h1>
-					<aside class="notes">
-						* todo: actually put stuff here.
-					</aside>
 				</section>
+        <section>
+          <h1>68%</h1>
+          <h3>of USA Owns a smartphone</h3>
+        </section>
+        <section>
+          <h1>94%</h1>
+          <h3>use their phones to search the internet</h3>
+        </section>
+        <section>
+          <h1>50%</h1>
+          <h3>of e-commerce web traffic</h3>
+        </section>
+        <section>
+          <h1>60%</h1>
+          <h3>use smartphones exclusively worldwide</h3>
+        </section>
+        <section>
+          <h1>Google.</h1>
+          <p>Responsiveness is a factor in google ranking</p>
+          <aside class="notes">
+            as of May 2016
+          </aside>
+        </section>
 
 				<section>
 					<h1>Architecture</h1>
@@ -78,7 +98,7 @@
 				<section>
 					<h2>How will we code the site?</h2>
 					<ul>
-						<li>Separate Code Base (using domains or dynamic content switch)</li>
+						<li>Separate Code Base</li>
 						<li>Responsive</li>
 					</ul>
 					<aside class="notes">
@@ -90,7 +110,6 @@
 
 				<section>
 					<h2>Separate Code Base</h2>
-					<h4>Advantages</h4>
 					<ul>
 						<li>Keeps each code base simpler</li>
 						<li>Smaller File sizes individually</li>
@@ -108,13 +127,13 @@
 
 				<section>
 					<h2>Responsive Code Base</h2>
-					<h4>Advantages</h4>
 					<ul>
 						<li>Requires good code organization</li>
 						<li>Smaller file sizes combined</li>
 						<li>More likely to net a better product in the end</li>
 						<li>One code base to maintain</li>
 						<li>Faster to code if familiar with UI</li>
+            <li>Generally accepted as the "recommended" method</li>
 					</ul>
 					<aside class="notes">
 							* good for sites that will likely be the same on both.
@@ -133,7 +152,7 @@
 					<h1>Mobile First</h1>
 				</section>
 
-				<section data-transition="slide-in fade-out">
+				<section>
 					<h2>What does it mean?</h2>
 					<img src="images/double_rainbow.jpg" alt="Double Rainbow- what does it mean?">
 					<aside class="notes">
@@ -142,8 +161,7 @@
 					</aside>
 				</section>
 
-				<section data-transition="fade-in slide-out">
-					<h2>What does it mean?</h2>
+				<section>
 					<h3><b>Think</b> Mobile First</h3>
 					<h3><b>Code</b> Mobile First</h3>
 				</section>
@@ -157,10 +175,14 @@
 					</ul>
 					<aside class="notes">
 						thinking mobile first is an easy habit to form.<br>
-						coding mobile first is not.
+						coding mobile first is not.<br>
 						todo: get more examples of thinking mobile first
 					</aside>
 				</section>
+
+        <section>
+          <blockquote>"Text is a UI." — Jakob Nielsen</blockquote>
+        </section>
 
 				<section>
 					<h3>DON'T scale your Desktop site down!</h3>
@@ -371,35 +393,44 @@
         </section>
         <section>
           <h2>Transform</h2>
-          <p>If possible, always use a transform.</p>
+          <p>If possible, use transform.</p>
           <aside class="notes">
             Translate doesn't repaint.
             hardware accelerated.
           </aside>
         </section>
+
         <section>
-          <pre><code>
-            // no!
-            .c-menu {
-              position: absolute;
-              left: 0;
-              transition: left .2s ease;
-            }
-            .c-menu.is-open{
-              left: 50px;
-            }
+          <h3>Easing</h3>
+          <p>Usually use <b>ease-out</b></p>
+          <aside class="notes">
+            google recommends ease-out because it feels most natural to a user
+          </aside>
+        </section>
+
+        <section>
+          <pre><code data-noescape>
+// no!
+.c-menu {
+  position: absolute;
+  <mark>left:</mark> 0;
+  transition: <mark>left</mark> .2s ease;
+}
+.c-menu.is-open{
+  <mark>left:</mark> 50px;
+}
           </code></pre>
 
-          <pre><code>
-            // yes!
-            .c-menu {
-              position: absolute;
-              left: 0;
-              transition: transform .2s ease;
-            }
-            .c-menu.is-open{
-              transform: translateX(50px);
-            }
+          <pre><code data-noescape>
+// yes!
+.c-menu {
+  position: absolute;
+  left: 0;
+  transition: <mark>transform</mark> .2s ease-out;
+}
+.c-menu.is-open{
+  <mark>transform:</mark> translateX(50px);
+}
           </code></pre>
           <aside class="notes">
             this leads me to scrolling...
@@ -407,7 +438,7 @@
         </section>
 
         <section>
-          <h2><code>scroll</code> is weird!</h2>
+          <h2><code class='il'>scroll</code> is weird!</h2>
           <p>But there are workarounds...</p>
           <aside class="notes">
             `scroll` event halts DOM repaints till complete.
@@ -416,10 +447,10 @@
         </section>
 
         <section>
-          <h3><code>requestAnimationFrame</code></h3>
+          <h3><code class='il'>requestAnimationFrame</code></h3>
           <p>Tell the browser to add an animation before next repaint.</p>
 
-          <h3><code>Javascript Libraries</code></h3>
+          <h3>Javascript Libraries</h3>
           <p>iScroll</p>
           <aside class="notes">
             BUT USE SPARINGLY
@@ -427,9 +458,9 @@
         </section>
 
         <section>
-          <h2><code>click</code> vs <code>tap</code> Events</h2>
-          <p><code>click</code> is slow, but reliable.</p>
-          <p><code>tap (touch)</code> is fast, but not fully supported.</p>
+          <h2><code class='il'>click</code> vs <code class='il'>tap</code> Events</h2>
+          <p><code class='il'>click</code> is slow, but reliable.</p>
+          <p><code class='il'>tap (touch)</code> is fast, but not fully supported.</p>
           <aside class="notes">
             up to 300ms slower.
             <br>
@@ -447,14 +478,14 @@
 
         <section>
           <h3>Be Careful...</h3>
-          <pre><code>
-            $('.js-btn')
-              .on('pointerup', function(e){
-                e.preventDefault(); // doesn't do anything.
-              })
-              .on('click', function(e){
-                e.preventDefault(); // still suppress events this way
-              })
+          <pre><code data-noescape>
+$('.js-btn')
+  .on('pointerup', function(e){
+    e.preventDefault(); <mark>// doesn't do anything.</mark>
+  })
+  .on('click', function(e){
+    e.preventDefault(); <mark>// still suppress events this way</mark>
+  })
           </code></pre>
         </section>
 
@@ -489,8 +520,7 @@
         </section>
 
         <section>
-          <h4>Number Input</h4>
-          <p>(Not as preferable)</p>
+          <h4>Number Input (less preferable)</h4>
           <pre><code><input type="number"></code></pre>
           <img src="images/keyboard_number.jpg" alt="Number Keyboard">
         </section>
@@ -503,8 +533,16 @@
 
         <section>
           <h4>Digit Input (any number)</h4>
-          <pre><code><input type="number" pattern="[0-9]*" step="any"></code></pre>
-          <img src="images/keyboard_digit_any.jpg" alt="Digit (Any) Keyboard">
+          <pre><code><input type="number" step="any"></code></pre>
+          <section class="c-grid">
+            <figure>
+              <img src="images/keyboard_digit_any.jpg" alt="Digit (Any) Keyboard">
+            </figure>
+            <figure>
+              <img src="images/android_keyboard_digit_any.png" alt="Android Digit (Any) Keyboard">
+            </figure>
+          </section>
+
         </section>
 
         <section>
@@ -534,6 +572,12 @@
             <li>Show Media Queries</li>
             <li>Touch events</li>
           </ul>
+        </section>
+
+        <section>
+          <h3>Google Page Speed</h3>
+          <p><a href="http://developers.google.com/speed/pagespeed/insights">developers.google.com/speed/pagespeed/insights</a></p>
+          <p>Tips &amp; Tricks for optimizing your site</p>
         </section>
 
         <section>

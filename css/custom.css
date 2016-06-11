@@ -20,3 +20,37 @@
   border: none!important;
   box-shadow: none!important;
 }
+
+.slide-background.all-the-things {
+  background: url(../images/all_the_things.jpg) no-repeat 100% 100%;
+  background-size: 50%;
+}
+code.il {
+  background: rgba(255, 204, 204, 0.35);
+  border: 1px solid currentColor;
+  color: #f33;
+  border-radius: 2px;
+  padding: 0 .1em;
+}
+
+mark{
+  background: rgba(255, 255, 25, .2);
+  color: inherit;
+}
+
+mark.add:before, mark.add:after {
+    content: "Add \2192";
+    background: yellow;
+    color: black;
+    margin-left: 5px;
+    position: absolute;
+    left: -68px;
+    border: 1px solid black;
+    padding: 0 2px;
+}
+
+/*mark.add:after {
+    content: "\2190 Add";
+    margin-left: 5px;
+    position: static;
+}*/
