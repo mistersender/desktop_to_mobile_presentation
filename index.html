@@ -40,6 +40,13 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+        <section>
+          <p>This slide intentionally left blank.</p>
+          <aside class="notes">
+            turn off hot corners!<br>
+          </aside>
+        </section>
+
 				<section>
 					<h1>Small Screens, Big Rewards!</h1>
 					<h3>The Experience of Converting Desktop to Mobile</h3>
@@ -102,50 +109,115 @@
 						<li>Responsive</li>
 					</ul>
 					<aside class="notes">
-							* separate domains - `m.`
-							* Dynamic switch - same domain, separate code bases
+							* separate domains - `m.`<br>
+							* Dynamic switch - same domain, separate code bases<br>
 							* Responsive - 1 code base for all the things
 					</aside>
 				</section>
 
 				<section>
-					<h2>Separate Code Base</h2>
-					<ul>
-						<li>Keeps each code base simpler</li>
-						<li>Smaller File sizes individually</li>
-						<li>Faster to code if new to mobile</li>
-						<li>Easier to make decisions</li>
-						<li>Less to break when updating</li>
-						<li>Easier to tailor experience</li>
-						<li>Allows for developers to "Specialize" in one base</li>
-					</ul>
-					<aside class="notes">
-						* tailor experience - like, "this report is unnecessary on mobile", remove it.
-						* decisions - like, "add a print button"?
-					</aside>
-				</section>
+					<h1>Separate Code Base</h1>
+          <h3>Advantages</h3>
+        </section>
+
+        <section>
+          <h2>Keeps each code base simpler</h2>
+          <aside class="notes">
+            desktop doesn't have to worry about mobile<br>
+            mobile doesn't have to deal with desktop
+          </aside>
+        </section>
+        <section>
+          <h2>Smaller File sizes individually</h2>
+          <aside class="notes">
+            desktop may be 400k<br>
+            mobile may be 200k
+          </aside>
+        </section>
+        <section>
+          <h2>Faster to code if new to mobile</h2>
+          <aside class="notes">
+            responsive is tricky
+          </aside>
+        </section>
+        <section>
+          <h2>Easier to tailor experience</h2>
+          <aside class="notes">
+            like, "this report is unnecessary on mobile", remove it.
+          </aside>
+        </section>
+        <section>
+          <h2>Easier to make decisions</h2>
+          <aside class="notes">
+            don't have to consider all the things<br>
+            or, "add a print button"?
+          </aside>
+        </section>
+        <section>
+          <h2>Less to break when updating</h2>
+          <aside class="notes">
+            testing is quicker
+          </aside>
+        </section>
+        <section>
+          <h2>Allows for developers to "Specialize" in one base</h2>
+          <aside class="notes">
+            better development when specializing
+          </aside>
+        </section>
 
 				<section>
-					<h2>Responsive Code Base</h2>
-					<ul>
-						<li>Requires good code organization</li>
-						<li>Smaller file sizes combined</li>
-						<li>More likely to net a better product in the end</li>
-						<li>One code base to maintain</li>
-						<li>Faster to code if familiar with UI</li>
-            <li>Generally accepted as the "recommended" method</li>
-					</ul>
-					<aside class="notes">
-							* good for sites that will likely be the same on both.
-							* experienced devs only
-					</aside>
-				</section>
+					<h1>Responsive Code Base</h1>
+          <h3>Advantages</h3>
+          <aside class="notes">
+						* good for sites that will likely be the same on both.<br>
+						* experienced devs only<br>
+            * a framework does not a responsive site make.
+          </aside>
+        </section>
+        <section>
+          <h2>Requires good code organization</h2>
+          <aside class="notes">
+            not fo yolo devs. keep css game tight.
+          </aside>
+        </section>
+        <section>
+          <h2>Smaller file sizes combined</h2>
+          <aside class="notes">
+            desktop may be 400k, mobile may be 200k, <br>
+            but responsive would probably be 475k
+          </aside>
+        </section>
+        <section>
+          <h2>More likely to net a better product in the end</h2>
+          <aside class="notes">
+            I am a big believer in this<br>
+            devs think better about design<br>
+          </aside>
+        </section>
+        <section>
+          <h2>One code base to maintain</h2>
+          <aside class="notes">
+            don't get out of sync. <br>
+            had issue where desktop would update, but not mobile, vice versa.
+          </aside>
+        </section>
+        <section>
+          <h2>Faster to code if familiar with UI</h2>
+          <aside class="notes">
+            surprisingly, once designs come together, coding comes faster.
+          </aside>
+        </section>
+        <section>
+          <h2>Generally accepted as the "recommended" method</h2>
+          <aside class="notes">
+            google, basically.
+          </aside>
+        </section>
+
 
 				<section>
-					<h2>Examples</h2>
-					<aside class="notes">
-						todo: actually come up with examples (audience particiapte pls)
-					</aside>
+					<h1>Methodologies</h1>
 				</section>
 
 				<section>
@@ -161,38 +233,97 @@
 					</aside>
 				</section>
 
-				<section>
-					<h3><b>Think</b> Mobile First</h3>
-					<h3><b>Code</b> Mobile First</h3>
-				</section>
+				<!-- <section>
+					<h2><b>Think</b> Mobile First</h2>
+          <br>
+					<h2><b>Code</b> Mobile First</h2>
+				</section> -->
 
 				<section>
 					<h2><b>Think</b> Mobile First</h2>
 					<ul>
 						<li class="fragment">Is it necessary?</li>
 						<li class="fragment">Is it useful?</li>
-						<li class="fragment">Is it easy?</li>
+						<li class="fragment">Is it simple?</li>
 					</ul>
 					<aside class="notes">
-						thinking mobile first is an easy habit to form.<br>
-						coding mobile first is not.<br>
-						todo: get more examples of thinking mobile first
+						thinking mobile first is an easy habit to form.
+
 					</aside>
 				</section>
 
         <section>
+          <h1>The 2 Biggest Pitfalls...</h1>
+        </section>
+
+        <section>
+          <h3>1. Not Considering Text</h3>
           <blockquote>"Text is a UI." — Jakob Nielsen</blockquote>
+          <aside class="notes">
+            how understandable text is<br>
+            translation<br>
+            how text fits</br>
+          </aside>
         </section>
 
 				<section>
-					<h3>DON'T scale your Desktop site down!</h3>
+					<h3>2. Scaling desktop down</h3>
 					<img src="images/gob_come_on.gif" alt="Oh, come on!">
 				</section>
 
 				<section>
-					<h1>How to <b>Code</b> Mobile First</h1>
+					<h1><b>Code</b> Mobile First</h1>
 					<aside class="notes">
 						ask them for ideas about how to code mobile first.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Shift your Thoughts</h2>
+					<p><code class="il">320px</code> is your new "base" size.</p>
+					<p class="fragment">This: <code class="il">@media ( min-width: 568px ) {}</code></p>
+          <p class="fragment">Not: <code class="il">@media ( max-width: 568px ) {}</code></p>
+					<p class="fragment">Queries should be <b>applied</b> as screen size <b>increases</b>.</p>
+          <aside class="notes">
+            aha! moment when designer was getting agitated because i was applying queries incorrectly<br>
+            added bonus: queries can be combined to make files smaller
+          </aside>
+				</section>
+
+				<section>
+					<h3>Touchable Areas</h3>
+					<ul>
+						<li><code class="il">44px</code> is perfect touch size.</li>
+						<li>Are links too close together?</li>
+						<li>Does this look interactive?</li>
+					</ul>
+					<aside class="notes">
+						interactive: material design shadows? overflowing text for scrolling?<br>
+						<!-- todo: get screenshots of the things above -->
+					</aside>
+				</section>
+
+				<section>
+					<h3>Use Protocols!</h3>
+					<p class="fragment">Email: <code class="il">href="mailto:triadwebcrafters@gmail.com"</code></p>
+					<p class="fragment">Phone: <code class="il">href="tel:3365551234"</code></p>
+				</section>
+
+				<section>
+					<h3>Meta Tags</h3>
+					<p>Preventing facepalms everywhere.</p>
+          <p class="fragment"><code class="il">width=device-width</code>, <code class="il">initial-scale=1</code>, <code class="il">minimum-scale=1</code>, <code class="il">maximum-scale=1</code>, <code class="il">user-scalable=no</code>, <code class="il">minimal-ui</code></p>
+          <div class="fragment">
+            <p><a href="examples/flexbox/without-meta.html" target="_blank">Example Without Meta Tags</a> </p>
+            <p><a href="examples/flexbox/index.html" target="_blank">Example With Meta Tags</a></p>
+          </div>
+					<aside class="notes">
+						If its a weird bug, you probably missed a meta tag.<br>
+						tell story about setting up example sites.
+            <hr>
+            Disable pinch/zoom<br>
+            Disable auto-locating phone/addresses<br>
+            "viewport" - tons of options]
 					</aside>
 				</section>
 
@@ -211,77 +342,43 @@
 				<section>
 					<h3>Magic They Perform</h3>
 					<ul>
-						<li>Reusable css</li>
-						<li>Minify css</li>
-						<li>Auto-prefix css</li>
-						<li>Automatically combine media queries</li>
-						<li>And more!</li>
+						<li class="fragment">Reusable css</li>
+						<li class="fragment">Minify css</li>
+						<li class="fragment">Auto-prefix css</li>
+						<li class="fragment">Automatically combine media queries</li>
+						<li class="fragment">And more!</li>
 					</ul>
 				</section>
 
-				<section>
-					<h2>Shift your Thoughts</h2>
-					<p><b>320px</b> is your new "base" size.</p>
-					<p>This: <pre><code class="hljs">@media ( min-width: 568px ) {}</code></pre> Not: <pre><code class="hljs">@media ( max-width: 568px ) {}</code></pre></p>
-					<p>Queries should be <b>applied</b> as screen size <b>increases</b>.</p>
-				</section>
-
-				<section>
-					<h3>Touchable Areas</h3>
-					<ul>
-						<li><b>44px</b> is perfect touch size.</li>
-						<li>Are links too close together?</li>
-						<li>Does this look interactive?</li>
-					</ul>
-					<aside class="notes">
-						interactive: material design shadows? overflowing text for scrolling?
-						todo: get screenshots of the things above
-					</aside>
-				</section>
-
-				<section>
-					<h3>Use Protocols!</h3>
-					Email:
-					<pre><code class="hljs">href="mailto:triadwebcrafters@gmail.com"</code></pre>
-					Phone:
-					<pre><code class="hljs">href="tel:3365551234"</code></pre>
-				</section>
-
-				<section>
-					<h3>Meta Tags</h3>
-					<p>Preventing facepalms everywhere.</p>
-					<ul>
-						<li>Disable pinch/zoom</li>
-						<li>Disable auto-locating phone/addresses</li>
-						<li>"viewport" - tons of options, like:</li>
-					</ul>
-          <pre><code>width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui</code></pre>
-          <p><a href="examples/flexbox/without-meta.html" target="_blank">Example Without Meta Tags</a> </p>
-          <p><a href="examples/flexbox/index.html" target="_blank">Example With Meta Tags</a></p>
-					<aside class="notes">
-						If its a weird bug, you probably missed a meta tag.
-						todo: set up a boilerplate with metas
-					</aside>
-				</section>
+        <section>
+          <h2>Want to know more?</h2>
+          <h3>Go to "Getting Started with Build Tools"</h3>
+          <h4>Tomorrow</h4>
+        </section>
 
 <!-- -------------------CSS----------------------- -->
         <section>
           <h1>CSS</h1>
-          <p>The one everyone seems to hate.</p>
+          <aside class="notes">
+            people seem to hate css!<br>
+            about to show yoy ways to code css to make files smaller
+          </aside>
         </section>
 
         <section>
-          <h2>calc()</h2>
-          <p>The coolest thing since flexbox</p>
+          <h2><code class="il">calc()</code></h2>
           <pre><code>
 .o-wrapper {
-  margin-left: calc(100% - 50px);
+  margin-left: calc(100% - 12em);
 }
           </code></pre>
+          <aside class="notes">
+            great in flexible displays for keeping 1 thing we know the height of in place
+          </aside>
         </section>
 
         <section>
-          <h2>em & vh</h2>
+          <h2><code class="il">em</code> & <code class="il">vh</code></h2>
           <p>The most underrated units of measure<p>
           <aside class="notes">
             who can tell me what ems are?
@@ -289,6 +386,9 @@
             who can tell me where ems got their name? ("M" used for spacing)
             <br>
             what about vh?
+            <br>
+            ems- originally a standard, fell out of vogue. now back.<br>
+            can scale w/ 1 small change = small file sizes
           </aside>
         </section>
 
@@ -298,18 +398,96 @@
         </section>
 
         <section>
-          <h2>currentColor</h2>
-          <!-- @todo: might scrap this one. -->
+          <h2><code class="il">currentColor</code></h2>
           <aside class="notes">
-            used for like a spinner or something.
+            real css variable<br>
+            well supported<br>
+
+          </aside>
+        </section>
+
+        <section>
+          <h3>Without <code class="il">currentColor</code></h3>
+          <div class="c-grid">
+            <pre><code class="css">
+// Original
+.c-spinner {
+  ..
+  color: green;
+
+  &:before {
+    ...
+    background: green;
+    border: 8px solid green;
+  }
+
+  &--inner{
+    ...
+    box-shadow: 0 0 5px inset green;
+    color: green;
+  }
+}
+            </code></pre>
+            <pre><code class="css">
+// Override to purple
+.c-spinner--secondary {
+  color: purple;
+
+  &:before {
+    background-color: purple;
+    border-color: purple;
+  }
+
+  &--inner{
+    box-shadow: 0 0 5px inset purple;
+    color: purple;
+  }
+}
+            </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>WITH <code class="il">currentColor</code></h3>
+          <div class="c-grid">
+            <pre><code class="css">
+// Original
+.c-spinner {
+  ..
+  color: green;
+
+  &:before {
+    ...
+    background: currentColor;
+    border: 8px solid currentColor;
+  }
+
+  &--inner{
+    ...
+    box-shadow: 0 0 5px inset currentColor;
+    color: currentColor;
+  }
+}
+            </code></pre>
+            <pre><code class="css">
+// Override to purple
+.c-spinner--secondary {
+  color: purple;
+}
+            </code></pre>
+          </div>
+          <aside class="notes">
+            some may say 'why not use a _sass_ variable'<br>
+            it's less rendered code.
           </aside>
         </section>
 
         <section>
           <h2>Flexbox</h2>
           <p>The coolest thing since internet</p>
-          <!-- @todo make an example -->
           <aside class="notes">
+            how many used flexbox?<br>
+            how many used for more than center aligning text?<br>
             fixes all the weird stuff bootstrap does for grids
             <br>
             lighter faster, more flexible
@@ -334,6 +512,9 @@
           <h2>Want to know more?</h2>
           <h3>Go to "Highly Organized CSS"</h3>
           <h4>With Tyler Benton</h4>
+          <aside class="notes">
+            could talk another hour about css, but i don't have to.
+          </aside>
         </section>
 
 <!-- -------------------Images----------------------- -->
@@ -345,25 +526,25 @@
           <h4>SVG is Fully Suported</h4>
         </section>
         <section>
-          <h2>SVG > Icon Font <small>(usually)</small></h2>
+          <h2>SVG > Icon Font <i>(usually)</i></h2>
           <ul>
             <li>More Accessible</li>
             <li>More Flexible</li>
             <li>Multi-color</li>
           </ul>
           <aside class="notes">
-            - More accessible (some users have forced fonts, so icons don't look weird if svg)
-            - more flexible (don't have to be in before or after, can be a background)
+            - More accessible (some users have forced fonts, so icons don't look weird if svg)<br>
+            - more flexible (don't have to be in before or after, can be a background)<br>
             - BUT icon fonts are *slightly* better performance. & can change color easily.
           </aside>
         </section>
         <section>
           <h2>1x, 2x, & 3x Images</h2>
-          <pre><code>
-            &lt;img src="gob.jpeg"
-                 srcset="gob.jpeg 1x,
-                         gob@2x.jpeg 2x,
-                         gob@3x.jpeg 3x"&gt;
+          <pre><code class="html">
+  &lt;img src="gob.jpeg"
+       srcset="gob.jpeg 1x,
+               gob@2x.jpeg 2x,
+               gob@3x.jpeg 3x"&gt;
           </code></pre>
           <aside class="notes">
             1x 2x 3x better supported than specific sizes.
@@ -395,14 +576,14 @@
           <h2>Transform</h2>
           <p>If possible, use transform.</p>
           <aside class="notes">
-            Translate doesn't repaint.
+            Translate doesn't repaint.<br>
             hardware accelerated.
           </aside>
         </section>
 
         <section>
           <h3>Easing</h3>
-          <p>Usually use <b>ease-out</b></p>
+          <p>Usually use <code class="il">ease-out</code></p>
           <aside class="notes">
             google recommends ease-out because it feels most natural to a user
           </aside>
@@ -442,25 +623,27 @@
           <p>But there are workarounds...</p>
           <aside class="notes">
             `scroll` event halts DOM repaints till complete.
-            iScroll uses translate.
           </aside>
         </section>
 
         <section>
           <h3><code class='il'>requestAnimationFrame</code></h3>
-          <p>Tell the browser to add an animation before next repaint.</p>
-
-          <h3>Javascript Libraries</h3>
-          <p>iScroll</p>
+          <p>Tell the browser to add an animation before next <code class="il">repaint</code>.</p>
           <aside class="notes">
             BUT USE SPARINGLY
           </aside>
         </section>
 
         <section>
+          <h3>Javascript Libraries</h3>
+          <p>iScroll</p>
+          <aside class="notes">
+            iScroll uses translate.
+          </aside>
+        </section>
+
+        <section>
           <h2><code class='il'>click</code> vs <code class='il'>tap</code> Events</h2>
-          <p><code class='il'>click</code> is slow, but reliable.</p>
-          <p><code class='il'>tap (touch)</code> is fast, but not fully supported.</p>
           <aside class="notes">
             up to 300ms slower.
             <br>
@@ -469,8 +652,22 @@
         </section>
 
         <section>
+          <h3><code class='il'>click</code> is slow, but reliable.</h3>
+          <aside class="notes">
+            up to 300ms slower.
+            <br>
+          </aside>
+        </section>
+        <section>
+          <h3><code class='il'>tap (touch)</code> is fast, but not fully supported.</h3>
+          <aside class="notes">
+            mouse & touch events not the same.
+          </aside>
+        </section>
+
+        <section>
           <h2>Use a polyfill!</h2>
-          <p>Pointer Events Polyfill works great</p>
+          <p><b>Pointer Events</b> Polyfill works great</p>
           <aside class="notes">
             From Microsoft, unifying. w3c working to standardize (feb 2015)
           </aside>
@@ -478,7 +675,7 @@
 
         <section>
           <h3>Be Careful...</h3>
-          <pre><code data-noescape>
+          <pre><code class="js" data-noescape>
 $('.js-btn')
   .on('pointerup', function(e){
     e.preventDefault(); <mark>// doesn't do anything.</mark>
@@ -492,7 +689,6 @@ $('.js-btn')
         <section>
           <h2>Forms & Keyboards</h2>
           <img src="images/input_types_morpheus.jpg" alt="What if I told you there was more than 1 input type?">
-          <!-- todo: get images of all these -->
         </section>
 
         <section>
@@ -556,7 +752,6 @@ $('.js-btn')
           </ul>
         </section>
 
-
         <section>
           <h1>Tools</h1>
         </section>
@@ -564,7 +759,6 @@ $('.js-btn')
         <section>
           <h3>Chrome dev tools</h3>
           <p>Great mobile tools for testing</p>
-          <!-- todo: possibly show demo of tools -->
           <ul>
             <li>Device Pixel ratio (retina images)</li>
             <li>Device Types</li>
@@ -572,6 +766,9 @@ $('.js-btn')
             <li>Show Media Queries</li>
             <li>Touch events</li>
           </ul>
+          <aside class="notes">
+            if time, demo
+          </aside>
         </section>
 
         <section>
@@ -588,7 +785,7 @@ $('.js-btn')
         <section>
           <h2>BrowserSync.io</h2>
           <p>Test all the pages on all the things at the same time!</p>
-          <img src="images/all_the_things.jpg" alt="All The Things!">
+          <img src="images/all_the_things.jpg" alt="All The Things!" style="max-width: 400px">
         </section>
 
         <section>
@@ -607,6 +804,20 @@ $('.js-btn')
           <h1>Questions?</h1>
           <p>Twitter/Github:</p>
           <p>@mistersender</p>
+        </section>
+
+        <section class="inmar">
+          <div class="c-grid">
+            <div>
+              <img src="images/inmar/logo.png" alt="inmar">
+              <h4>Intelligent Commerce</h4>
+              <p>Billions transactions and shopper engagements flow through our systems. For over 35 years, Inmar has been the leader in North America for managing promotional dollars, loyalty and shopper engagement; logistics and supply chain; and healthcare and pharmaceuticals.</p>
+              <p>We employ the best engineers across North America and the world to work on rich web and mobile applications, big data and real-time analytics, embedded and RF logistics for supply chain and warehouses, and more. If you think you have what it takes, apply to join the team!</p>
+            </div>
+            <div>
+              <!-- intentionally blank for bg to appear-->
+            </div>
+          </div>
         </section>
 
 			</div>

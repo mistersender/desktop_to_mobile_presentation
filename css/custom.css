@@ -54,3 +54,36 @@ mark.add:before, mark.add:after {
     margin-left: 5px;
     position: static;
 }*/
+
+/*.inmar h4 {
+  font-family: sans-serif;
+}*/
+
+.inmar.slide-background:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: url(../images/inmar/headquarters.png);
+  background-size: cover;
+}
+.inmar.present {
+  font-size: .5em
+}
+.inmar h4 {
+  font-size: 2em;
+}
+.inmar img{
+  box-shadow: none!important;
+  border: none!important;
+  margin: 0!important;
+}
+.inmar .c-grid > *:first-child {
+  padding-right: 2em;
+  position: relative;
+  right: 3em;
+}
