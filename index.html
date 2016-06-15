@@ -293,9 +293,9 @@
 				<section>
 					<h3>Touchable Areas</h3>
 					<ul>
-						<li><code class="il">44px</code> is perfect touch size.</li>
-						<li>Are links too close together?</li>
-						<li>Does this look interactive?</li>
+						<li class="fragment"><code class="il">44px</code> is perfect touch size.</li>
+						<li class="fragment">Are links too close together?</li>
+						<li class="fragment">Does this look interactive?</li>
 					</ul>
 					<aside class="notes">
 						interactive: material design shadows? overflowing text for scrolling?<br>
@@ -421,7 +421,7 @@
     border: 8px solid green;
   }
 
-  &--inner{
+  &__inner{
     ...
     box-shadow: 0 0 5px inset green;
     color: green;
@@ -438,7 +438,7 @@
     border-color: purple;
   }
 
-  &--inner{
+  &__inner{
     box-shadow: 0 0 5px inset purple;
     color: purple;
   }
@@ -462,7 +462,7 @@
     border: 8px solid currentColor;
   }
 
-  &--inner{
+  &__inner{
     ...
     box-shadow: 0 0 5px inset currentColor;
     color: currentColor;
@@ -590,8 +590,10 @@
         </section>
 
         <section>
-          <pre><code data-noescape>
-// no!
+          <div class="c-grid">
+            <div>
+              <h4>Not this</h4>
+              <pre><code data-noescape class="css">
 .c-menu {
   position: absolute;
   <mark>left:</mark> 0;
@@ -600,10 +602,11 @@
 .c-menu.is-open{
   <mark>left:</mark> 50px;
 }
-          </code></pre>
-
-          <pre><code data-noescape>
-// yes!
+              </code></pre>
+            </div>
+            <div>
+              <h4>This</h4>
+              <pre><code data-noescape class="css">
 .c-menu {
   position: absolute;
   left: 0;
@@ -612,7 +615,13 @@
 .c-menu.is-open{
   <mark>transform:</mark> translateX(50px);
 }
-          </code></pre>
+              </code></pre>
+            </div>
+          </div>
+
+
+
+
           <aside class="notes">
             this leads me to scrolling...
           </aside>
@@ -789,7 +798,7 @@ $('.js-btn')
         </section>
 
         <section>
-          <h2>InputTypes.com</h2>
+          <h2><a href="http://inputTypes.com">InputTypes.com</a></h2>
           <p>A great resource for testing keyboard inputs</p>
           <p>By: Aaron Ladage @aladage</p>
         </section>
@@ -798,12 +807,6 @@ $('.js-btn')
           <h2>CanIUse.com</h2>
           <p>How well supported <b>is</b> that thing you want to use?</p>
           <img src="images/caniuse.jpg" alt="CanIUse screenshot">
-        </section>
-
-        <section>
-          <h1>Questions?</h1>
-          <p>Twitter/Github:</p>
-          <p>@mistersender</p>
         </section>
 
         <section class="inmar">
@@ -818,6 +821,12 @@ $('.js-btn')
               <!-- intentionally blank for bg to appear-->
             </div>
           </div>
+        </section>
+
+        <section>
+          <h1>Questions?</h1>
+          <p>Twitter/Github:</p>
+          <p>@mistersender</p>
         </section>
 
 			</div>
