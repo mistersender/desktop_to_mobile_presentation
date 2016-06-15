@@ -203,12 +203,6 @@
           </aside>
         </section>
         <section>
-          <h2>Faster to code if familiar with UI</h2>
-          <aside class="notes">
-            surprisingly, once designs come together, coding comes faster.
-          </aside>
-        </section>
-        <section>
           <h2>Generally accepted as the "recommended" method</h2>
           <aside class="notes">
             google, basically.
@@ -262,7 +256,8 @@
           <aside class="notes">
             how understandable text is<br>
             translation<br>
-            how text fits</br>
+            how text fits<br>
+            Error Messaging!
           </aside>
         </section>
 
@@ -312,7 +307,14 @@
 				<section>
 					<h3>Meta Tags</h3>
 					<p>Preventing facepalms everywhere.</p>
-          <p class="fragment"><code class="il">width=device-width</code>, <code class="il">initial-scale=1</code>, <code class="il">minimum-scale=1</code>, <code class="il">maximum-scale=1</code>, <code class="il">user-scalable=no</code>, <code class="il">minimal-ui</code></p>
+          <ul class="fragment">
+            <li>width=device-width</li>
+            <li>initial-scale=1</li>
+            <li>minimum-scale=1</li>
+            <li>maximum-scale=1</li>
+            <li>user-scalable=no</li>
+            <li>minimal-ui</li>
+          </ul>
           <div class="fragment">
             <p><a href="examples/flexbox/without-meta.html" target="_blank">Example Without Meta Tags</a> </p>
             <p><a href="examples/flexbox/index.html" target="_blank">Example With Meta Tags</a></p>
@@ -384,6 +386,8 @@
             who can tell me what ems are?
             <br>
             who can tell me where ems got their name? ("M" used for spacing)
+            <br>
+            REM?
             <br>
             what about vh?
             <br>
@@ -572,20 +576,22 @@
         <section>
           <h1>Events & Animations</h1>
         </section>
-        <section>
-          <h2>Transform</h2>
-          <p>If possible, use transform.</p>
-          <aside class="notes">
-            Translate doesn't repaint.<br>
-            hardware accelerated.
-          </aside>
-        </section>
+
 
         <section>
           <h3>Easing</h3>
           <p>Usually use <code class="il">ease-out</code></p>
           <aside class="notes">
             google recommends ease-out because it feels most natural to a user
+          </aside>
+        </section>
+
+        <section>
+          <h2>Transform</h2>
+          <p>If possible, use transform.</p>
+          <aside class="notes">
+            Translate doesn't repaint.<br>
+            hardware accelerated.
           </aside>
         </section>
 
@@ -618,10 +624,6 @@
               </code></pre>
             </div>
           </div>
-
-
-
-
           <aside class="notes">
             this leads me to scrolling...
           </aside>
